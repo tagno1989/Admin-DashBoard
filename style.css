@@ -1,0 +1,294 @@
+
+/* initial grid setup / dev styles */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30% 70%;
+}
+
+.section1{
+    grid-column: 1 / 2;
+    height: 100vh;
+    width: 100%;
+    background-color: #0ea5e9;
+    display: grid;
+    overflow: auto;
+    position: sticky;
+}
+.header-section {
+    box-shadow: 10px 5px 5px grey;
+    position: sticky;
+    overflow: auto;
+}
+
+.main{
+    grid-column: 2/3;
+    background-color: rgba(211, 211, 211, 0.658);
+    overflow: auto;
+}
+
+
+/* Nav/SideBar styles */
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 12px;
+    margin-right: 150px;
+    margin-top: -32px;
+}
+
+.head{
+    color: white;
+    font-size: 1.5em;
+}
+
+.side-card {
+    display: grid;
+    place-items: center;
+    height:100px;
+    width: 200px;
+}
+
+.logo-svg {
+    height: 50px;
+    width: 50px;
+    display: grid;
+    
+}
+
+/* icons / description */
+.list-items-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 4px;
+}
+.item {
+    display: grid;
+    place-content: start;
+    gap: 18px;
+}
+.nav-head {
+    display: grid;
+    grid-column: 2/3;
+    color: white;
+    align-self: center;
+    justify-self: start;
+    
+}
+.nav-svg {
+    display: grid;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.list-items-bottom {
+    display: grid;
+    margin-top: 36px;
+    margin-bottom: 250px;
+}
+
+/* heading styles */
+
+.header {
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    gap: 36px;
+    margin-top: 16px;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-left: 20px;
+    gap: 8px;
+}
+
+input {
+    background-color: rgba(211, 211, 211, 0.402);
+    border-radius: 20px;
+    width: 400px;
+    display: grid;
+}
+
+.head-right {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    justify-content: end;
+    margin-right: 50px;
+    gap: 24px;
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+}
+
+.hi-there {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto;
+    place-items: center;
+    position: sticky;
+}
+
+.message {
+    display: grid;
+    grid-column: 2/3;
+    margin-right: 100px;
+}
+
+.bear-big {
+    margin-left: 50px;
+    height: 60px;
+    width: 60px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    place-items: center;
+    margin-right: 18px;
+    position: sticky;
+}
+
+button {
+    display: grid;
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 20px;
+    width: 125px;
+    height: 45px;
+    padding: 12px;
+}
+
+/* main section styles */
+
+.main-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid: 1fr 1fr 1fr/ 1fr 1fr;
+    gap: 16px;
+    padding: 10px 10px 25px 10px;
+    width: 60%;
+    height: 100%;
+}
+
+.projecth {
+    font-weight: bolder;
+    padding: 25px 0 10px 10px;
+}
+
+.box {
+    display: grid;
+    gap: 6px;
+    background-color: whitesmoke;
+    box-shadow: 10px 5px 5px lightgrey;
+    border-left: 5px solid #eab308;
+    border-radius: 5px;
+    padding: 25px;
+    height: 150px;
+    width: 300px;
+}
+
+.inner-text , .inner-head {
+    text-align: start;
+    padding: 5px;
+}
+
+.icons-main {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 25px;
+    padding: 0 12px 12px 0;
+}
+
+/* Side Main content  */
+
+.side-main {
+    display: grid;
+    grid-template-rows: 10% 1fr 1fr ;
+    
+}
+
+.boxa {
+    display: grid;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 5px lightgrey;
+    padding: 20px;
+    gap: 6px;
+    border-radius: 12px;
+    margin-top: -60px;
+    margin-right: 12px;
+    width: 250px;
+
+}
+
+.mainh {
+    margin-top: -25px;
+    font-weight: bolder;
+}
+
+.bb {
+    border-bottom: 1px solid grey;
+    padding: 12px;
+    line-height: 1.25;
+}
+
+div> h1 {
+    font-weight: bolder;
+}
+
+.social {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    place-items: center;
+    gap: 6px;
+
+    margin-right: 12px;
+    height: auto;
+    width: auto;
+    margin-top: -200px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px lightgrey;
+    background-color: whitesmoke;
+    border-radius: 30px;
+}
+
+.boxb {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 48px;
+    padding: 12px;    
+}
+
+.socialh {
+    display: grid;
+    padding: 18px 0 10px 8px;
+    height: 35px;
+}
+
+/* more dev styles */
+
+button:hover {
+    cursor: pointer;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
